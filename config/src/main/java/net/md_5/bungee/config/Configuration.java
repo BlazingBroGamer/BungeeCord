@@ -28,7 +28,7 @@ public final class Configuration
         Object section = self.get( root );
         if ( section == null )
         {
-            section = new LinkedHashMap<>();
+            section = new LinkedHashMap<Configuration>();
             self.put( root, section );
         }
         if ( section instanceof Configuration )
@@ -107,7 +107,7 @@ public final class Configuration
     public List<Byte> getByteList(String path)
     {
         List<?> list = getList( path );
-        List<Byte> result = new ArrayList<>();
+        List<Byte> result = new ArrayList<Byte>();
 
         for ( Object object : list )
         {
@@ -135,7 +135,7 @@ public final class Configuration
     public List<Short> getShortList(String path)
     {
         List<?> list = getList( path );
-        List<Short> result = new ArrayList<>();
+        List<Short> result = new ArrayList<Short>();
 
         for ( Object object : list )
         {
@@ -163,7 +163,7 @@ public final class Configuration
     public List<Integer> getIntList(String path)
     {
         List<?> list = getList( path );
-        List<Integer> result = new ArrayList<>();
+        List<Integer> result = new ArrayList<Integer>();
 
         for ( Object object : list )
         {
@@ -191,7 +191,7 @@ public final class Configuration
     public List<Long> getLongList(String path)
     {
         List<?> list = getList( path );
-        List<Long> result = new ArrayList<>();
+        List<Long> result = new ArrayList<Long>();
 
         for ( Object object : list )
         {
@@ -219,7 +219,7 @@ public final class Configuration
     public List<Float> getFloatList(String path)
     {
         List<?> list = getList( path );
-        List<Float> result = new ArrayList<>();
+        List<Float> result = new ArrayList<Float>();
 
         for ( Object object : list )
         {
@@ -247,7 +247,7 @@ public final class Configuration
     public List<Double> getDoubleList(String path)
     {
         List<?> list = getList( path );
-        List<Double> result = new ArrayList<>();
+        List<Double> result = new ArrayList<Double>();
 
         for ( Object object : list )
         {
@@ -275,7 +275,7 @@ public final class Configuration
     public List<Boolean> getBooleanList(String path)
     {
         List<?> list = getList( path );
-        List<Boolean> result = new ArrayList<>();
+        List<Boolean> result = new ArrayList<Boolean>();
 
         for ( Object object : list )
         {
@@ -303,7 +303,7 @@ public final class Configuration
     public List<Character> getCharList(String path)
     {
         List<?> list = getList( path );
-        List<Character> result = new ArrayList<>();
+        List<Character> result = new ArrayList<Character>();
 
         for ( Object object : list )
         {
@@ -331,7 +331,7 @@ public final class Configuration
     public List<String> getStringList(String path)
     {
         List<?> list = getList( path );
-        List<String> result = new ArrayList<>();
+        List<String> result = new ArrayList<String>();
 
         for ( Object object : list )
         {
