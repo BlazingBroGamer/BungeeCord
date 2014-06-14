@@ -50,10 +50,10 @@ public class YamlConfiguration extends ConfigurationProvider
     {
         try{
             FileReader reader = new FileReader( file );
-            return load( reader );
         }catch(Exception e){
             e.printStackTrace();
         }
+        return reader;
     }
 
     @Override
