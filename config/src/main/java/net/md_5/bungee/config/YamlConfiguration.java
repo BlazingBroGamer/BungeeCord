@@ -69,6 +69,6 @@ public class YamlConfiguration extends ConfigurationProvider
     public Configuration load(String string)
     {
         Map<String, Object> map = yaml.get().loadAs( string, LinkedHashMap.class );
-        rn new Configuration( map, null );
+        return new Configuration( map, null );
     }
 }
