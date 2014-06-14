@@ -10,7 +10,7 @@ import java.util.Map;
 public abstract class ConfigurationProvider
 {
 
-    private static final Map<Class<? extends ConfigurationProvider>, ConfigurationProvider> providers = new HashMap<>();
+    private static final Map<Class<? extends ConfigurationProvider>, ConfigurationProvider> providers = new HashMap<Class<? extends ConfigurationProvider>, ConfigurationProvider>();
 
     static
     {
