@@ -28,7 +28,7 @@ public final class Configuration
         Object section = self.get( root );
         if ( section == null )
         {
-            section = new LinkedHashMap<Configuration>();
+            section = new LinkedHashMap<Configuration, Configuration>();
             self.put( root, section );
         }
         if ( section instanceof Configuration )
