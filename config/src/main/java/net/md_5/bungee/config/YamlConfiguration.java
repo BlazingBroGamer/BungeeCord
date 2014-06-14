@@ -46,8 +46,8 @@ public class YamlConfiguration extends ConfigurationProvider
     @Override
     public Configuration load(File file) throws IOException
     {
-        try ( FileReader reader = new FileReader( file ) )
-        {
+        try{
+            FileReader reader = new FileReader( file );
             return load( reader );
         }
     }
