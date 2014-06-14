@@ -63,7 +63,7 @@ public class YamlConfiguration extends ConfigurationProvider
         Map<String, Object> map = yaml.get().loadAs( reader, LinkedHashMap.class );
         if ( map == null )
         {
-            map = new LinkedHashMap<map>();
+            map = new LinkedHashMap<reader, LinkedHashMap.class>();
         }
         return new Configuration( map, null );
     }
@@ -75,7 +75,7 @@ public class YamlConfiguration extends ConfigurationProvider
         Map<String, Object> map = yaml.get().loadAs( string, LinkedHashMap.class );
         if ( map == null )
         {
-            map = new LinkedHashMap<Map>();
+            map = new LinkedHashMap<reader, LinkedHashMap.class>();
         }
         return new Configuration( map, null );
     }
