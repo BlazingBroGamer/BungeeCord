@@ -34,6 +34,8 @@ public class YamlConfiguration extends ConfigurationProvider
         try {
             FileWriter writer = new FileWriter( file );
             save( config, writer );
+        }catch(Exception e){
+            e.printStackTrace();
         }
     }
 
@@ -49,6 +51,8 @@ public class YamlConfiguration extends ConfigurationProvider
         try{
             FileReader reader = new FileReader( file );
             return load( reader );
+        }catch(Exception e){
+            e.printStackTrace();
         }
     }
 
@@ -71,7 +75,7 @@ public class YamlConfiguration extends ConfigurationProvider
         Map<String, Object> map = yaml.get().loadAs( string, LinkedHashMap.class );
         if ( map == null )
         {
-            map = new LinkedHashMap<>();
+            map = new LinkedHashMap<Map>();
         }
         return new Configuration( map, null );
     }
