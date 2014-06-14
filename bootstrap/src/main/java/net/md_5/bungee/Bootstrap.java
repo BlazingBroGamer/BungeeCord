@@ -45,7 +45,7 @@ public class Bootstrap
             return;
         }
 
-        if ( BungeeCord.class.getPackage().getSpecificationVersion() != null && System.getProperty( "IReallyKnowWhatIAmDoingISwear" ) == null )
+        if ( BungeeCord.class.getPackage().getSpecificationVersion() != null)
         {
             Calendar deadline = Calendar.getInstance();
             deadline.add( Calendar.WEEK_OF_YEAR, 2 );
