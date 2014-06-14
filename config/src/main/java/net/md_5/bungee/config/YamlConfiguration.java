@@ -31,8 +31,8 @@ public class YamlConfiguration extends ConfigurationProvider
     @Override
     public void save(Configuration config, File file) throws IOException
     {
-        try ( FileWriter writer = new FileWriter( file ) )
-        {
+        try {
+            FileWriter writer = new FileWriter( file );
             save( config, writer );
         }
     }
